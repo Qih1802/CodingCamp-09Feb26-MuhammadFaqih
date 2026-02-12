@@ -11,5 +11,5 @@ function welcomeMessage(){
 }
 
 function validasiForm(){
-    
+    data = document.getElementById('input-name').value
 }
