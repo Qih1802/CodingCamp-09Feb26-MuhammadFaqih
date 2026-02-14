@@ -10,6 +10,22 @@ function welcomeMessage(){
     
 }
 
+
 function validasiForm(){
-    data = document.getElementById('input-name').value
+    let nama = document.getElementById('name').value
+    let email = document.getElementById('email').value
+    let message = document.getElementById('message').value
+    
+    function sendMessage() {
+        if(nama === "" || email === "" || message === ""){
+            alert("Dokumen Tidak Boleh Kosong")
+        } else{
+            console.log('Nama :',nama)
+            console.log('Email :',email)
+            console.log('Your Message :',message)
+            alert("Terima Kasih Telah Datang Ke Website Saya "+ nama)
+        }
+        
+    }
+    sendMessage()
 }

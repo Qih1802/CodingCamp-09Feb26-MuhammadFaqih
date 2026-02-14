@@ -1,81 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Faqih</title>
 
     <link rel="stylesheet" href="CSS/style.css">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+
+<body class="scrol-smooth">
     <!-- Header Content -->
-    <header class="flex justify-between items-center p4">
-            <div class="logo" ></div>
-            <!-- nav menu -->
-             <nav class="flex">
-                <a class="border rounded p-2" href="#home-page">Home</a>
-                <a class="border rounded p-2" href="#profil-page">Ou Profile</a>
-                <a class="border rounded p-2" href="#portofolio-page">Portofolio</a>
-                <a class="border rounded p-2" href="#message-us-page">Message Us</a>
-             </nav>
+    <header class="flex justify-between items-center p-4 pb-3">
+        <div>
+            <img src="./IMG/logo.jpeg" alt="logo" class="w-20 h-20 rounded-full">
+        </div>
+        <!-- nav menu -->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#profil-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portofolio-page">Portofolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
 
     </header>
 
-    <hr/>
-    <!-- Main -->
+    <hr />
+
     <main>
-        <!-- home -->
-        <section id="home-page"class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" id="welcome-speech" >Welcome To Our Website</h2>
-            <p class="mt-2"> Selamat Menikmati</p>
+        
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome To Our Website</h2>
+            <p class="mt-2"> Selamat Berkunjung</p>
         </section>
         <hr>
-        <!-- profil -->
-        <section id="profil-page"class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" >Muhammad Faqih</h2>
-            <p class="mt-2"> I Am Software Engginer</p>
+        
+        <section id="profil-page" class="min-h-[500px] flex flex-col items-center text-center baground-gray-100 p-4">
+            <img src="./IMG/porto.jpeg" alt="Foto Portofolio" class="w-40 h-40 rounded-full  object-cover">
+            <h2 class="text-xl font-bold">Muhammad Faqih</h2>
+            <p class="text-blue-300 font-medium"> Student</p>
+            <p class="mt-2 text-gray-600 leading-relaxed"> Halo, Perkenalkan Nama Saya Muhammad Faqih. Saya adalah seorang pelajar yang sedang menempuh pendidikan di Universitas Persada Indonesia Y.A.I. Saya memiliki minat yang besar dalam bidang teknologi dan pengembangan web. Melalui website portofolio ini, saya ingin berbagi informasi tentang diri saya, keterampilan yang saya miliki, serta proyek-proyek yang telah saya kerjakan. Terima kasih telah mengunjungi website saya, dan saya berharap dapat terhubung dengan Anda melalui pesan di bagian "Message Us".</p>
         </section>
         <hr>
-        <!-- porto -->
-        <section id="portofolio-page"class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">My Skill</h2>
-            <p class="mt-2"> See More</p>
+        
+        <section id="portofolio-page" class="min-h-[500px] flex flex-col items-center bg-gray-100 p-8">
+            <h2 class="text-2xl font-bold mb-6 text-center">My Skill</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <ul  class="text- list-disc list-inside">
+                
+                    <li >UI/UX</li> 
+                    <li >JavaScript</li> 
+                    <li >HTML</li> 
+                    <li >CSS</li>
+                    <li>Data Base</li>
+                </ul>
+                <img src="./IMG/last.jpeg" alt="Foto Portofolio" class="w-40 h-40 rounded-full object-cover shadow-lg">
+                <ul  class="text-left list-disc list-inside">
+                <li >Desgin</li> 
+                <li >OOP</li> 
+                
+            </ul>
+        </div>
         </section>
         <hr>
-        <!-- Message us -->
-        <section id="message-us-page"class="min-h-[500px] mx-8">
+        
+
+        <section id="message-us-page" class="min-h-[500px] mx-8">
             <header>
 
-                <h2 class="text-xl font-bold" >Message us</h2>
+                <h2 class="text-xl font-bold">Message us</h2>
                 <p class="mt-2"> Silahkan hubungi </p>
             </header>
-            
+
             <form>
                 <div class="mb-4">
                     <label class="block mb-2" for="name">Name</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name"
+                        placeholder="Masukan Nama Anda">
                 </div>
                 <div class="mb-4">
                     <label class="block mb-2" for="email">Email</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" email="email" required>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email"
+                        placeholder="Masukan Email Anda">
                 </div>
                 <div class="mb-4">
                     <label class="block mb-2" for="message">Message</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5" required>Message Us</textarea>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
+                        placeholder="Berikan Masukan Tentang Website Ini"></textarea>
                 </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-gray-500" type="button"
+                    onclick="validasiForm()">Send Message</button>
             </form>
-        
+
         </section>
     </main>
-    <!-- Footer Content -->
-     <footer>
+
+    <footer>
         <hr>
         <p class="text-center p-4 ">Created by Muhammad Faqih</p>
-     </footer>
+    </footer>
 
-     <!-- JS -->
+    
     <script src="JS/script.js"> </script>
 </body>
+
 </html>
